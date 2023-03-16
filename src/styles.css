@@ -1,12 +1,12 @@
 h1 {
   font-size: 100px;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 h2 {
   display: inline;
   font-size: 60px;
-  margin-top: 30px;
   margin-left: 20px;
 }
 
@@ -22,6 +22,7 @@ h4 {
 
 li {
   list-style: none;
+  font-size: 20px;
 }
 
 footer {
