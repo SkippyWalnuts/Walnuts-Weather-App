@@ -1,15 +1,13 @@
 h1 {
-  font-size: 115px;
-  margin-right: 30px;
-  text-align: right;
+  font-size: 100px;
+  margin-left: 20px;
 }
 
 h2 {
   display: inline;
   font-size: 60px;
   margin-top: 30px;
-  margin-left: 30px;
-  text-align: left;
+  margin-left: 20px;
 }
 
 h3 {
@@ -19,16 +17,11 @@ h3 {
 
 h4 {
   font-size: 30px;
-  margin-left: 30px;
-  text-align: left;
+  margin-left: 20px;
 }
 
 li {
   list-style: none;
-}
-
-img {
-  text-align: center;
 }
 
 footer {
@@ -37,14 +30,15 @@ footer {
 
 .card {
   display: block;
+  font-family: "Quicksand", sans-serif;
   margin: 20px auto;
-  min-width: 950px;
-  max-width: 950px;
+  min-width: 1050px;
+  max-width: 1050px;
 }
 
 .search-form {
   display: block;
-  margin: 0 30px auto 30px;
+  margin: 0 20px auto 20px;
 }
 
 .metric-temp {

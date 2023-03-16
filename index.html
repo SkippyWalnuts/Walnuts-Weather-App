@@ -11,6 +11,11 @@
     <title>Walnuts Weather</title>
     <script src="https://kit.fontawesome.com/dbb0023781.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Babylonica&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+NKo&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -31,10 +36,9 @@
                 </form>
                 <br />
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-6">
                         <h2 id="temperature"></h2>
                         <h3 class="metric-temp">°C</h3>
-
                         <h4 id="condition"> </h4>
 
                         <ul>
@@ -45,22 +49,22 @@
 
                         </ul>
                     </div>
-
-                    <div class="col-3">
-                        <img src="src/images/undraw_spring.svg" class="season-img" width=300
+                    <div class="col-6">
+                        <img src="src/images/undraw_autumn.svg" class="season-img" height=300 width=400
                             alt="image of the current season">
                     </div>
 
-                    <div class="col-6">
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-12">
                         <h1 id="city">
                             London
                         </h1>
 
                     </div>
-
-
-
-
                 </div>
             </div>
         </div>
