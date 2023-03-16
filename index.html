@@ -16,6 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Babylonica&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+NKo&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -25,25 +27,22 @@
             <div class="card-body">
                 <form class="search-form" id="search-form">
                     <div class="row">
-                        <div class="col-9">
+                        <div class="col-md-9">
                             <input type="search" placeholder="Where to next?" autofocus="on" autocomplete="off"
                                 id="city-input" class="form-control shadow-sm" />
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3">
                             <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
                         </div>
                     </div>
                 </form>
-                <div class="row">
-                    <div class="col-12">
-                        <h1 id="city">
-                            London
-                        </h1>
 
-                    </div>
-                </div>
+                <h1 id="city">
+                    London
+                </h1>
+
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-md-5">
                         <h2 id="temperature"></h2>
                         <h3 class="metric-temp">°C</h3>
                         <h4 id="condition"> </h4>
@@ -55,16 +54,19 @@
                             <li> Humidity: <span id="humidity"></span>%</li>
 
                         </ul>
+
                     </div>
-                    <div class="col-5">
-                        <img src="src/images/undraw_summer.svg" class="season-img" height=300 width=400
-                            alt="image of the current season">
+
+                    <span class="material-symbols-rounded cloudy-icon col-md-2">
+                        cloudy
+                    </span>
+
+                    <div class="col-md-5">
+                        <img src="src/images/undraw_spring.svg" class="spring-img" height=300 width=400
+                            alt="season spring">
                     </div>
 
                 </div>
-
-
-
 
             </div>
         </div>
