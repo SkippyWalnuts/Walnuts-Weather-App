@@ -30,6 +30,7 @@ footer {
 }
 
 .card {
+  color: #3f3d56;
   display: block;
   font-family: "Quicksand", sans-serif;
   margin: 20px auto;
@@ -42,6 +43,6 @@ footer {
   margin: 0 20px auto 20px;
 }
 
-.cloudy-icon {
+.weather-icon {
   font-size: 200px;
 }

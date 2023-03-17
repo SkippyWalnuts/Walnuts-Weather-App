@@ -24,13 +24,11 @@ function formatDate(date) {
 function displayWeather(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
-
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
   document.querySelector("#condition").innerHTML =
     response.data.weather[0].main;
-
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
