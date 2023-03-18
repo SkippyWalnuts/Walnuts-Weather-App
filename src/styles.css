@@ -52,3 +52,8 @@ footer {
   display: block;
   margin: 0 20px auto 20px;
 }
+
+.weather-temperature .active {
+  color: #3f3d56;
+  cursor: default;
+}
