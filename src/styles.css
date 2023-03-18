@@ -1,13 +1,12 @@
 h1 {
   font-size: 100px;
-  margin-left: 20px;
+  font-weight: bolder;
   margin-top: 20px;
 }
 
 h2 {
   display: inline;
   font-size: 80px;
-  margin-left: 20px;
 }
 
 h3 {
@@ -21,13 +20,16 @@ a {
 
 h4 {
   font-size: 40px;
-  margin-left: 20px;
+
   text-transform: capitalize;
 }
 
 h5 {
   font-size: 25px;
-  margin-left: 20px;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
@@ -44,8 +46,9 @@ footer {
   display: block;
   font-family: "Quicksand", sans-serif;
   margin: 20px auto;
-  min-width: 1050px;
-  max-width: 1050px;
+  min-width: 1085px;
+  max-width: 1085px;
+  padding: 20px 20px 20px 20px;
 }
 
 .search-form {
