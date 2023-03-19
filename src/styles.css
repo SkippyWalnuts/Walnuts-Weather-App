@@ -38,6 +38,7 @@ li {
 }
 
 footer {
+  margin: none;
   text-align: center;
 }
 
@@ -46,8 +47,8 @@ footer {
   display: block;
   font-family: "Quicksand", sans-serif;
   margin: 20px auto;
-  min-width: 1085px;
-  max-width: 1085px;
+  min-width: 850px;
+  max-width: 850px;
   padding: 20px 20px 20px 20px;
 }
 
