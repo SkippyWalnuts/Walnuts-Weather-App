@@ -21,7 +21,8 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Tues", "Weds", "Thurs", "Fri", "Sat", "Sun"];
@@ -29,19 +30,26 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `
-                        <div class="col-md-2">
-                            ${day}
-                            <div class="row">
-                                <span class="col-md-6 forecast-icon" id="day-one-icon">☀</span>
-                                <span class="col-md-6 forecast-temperature" id="day-one-temperature">🌡</span>
-                            </div>
-                        </div>
-                        
-                    `;
+    <div class="col-md-2">
+        ${day}
+        <div class="row">
+            <span class="col-md-6 forecast-icon" id="day-one-icon">☀</span>
+            <span class="col-md-6 forecast-temperature" id="day-one-temperature">🌡</span>
+        </div>
+    </div>
+    
+`;
   });
 
   forecastHTML = forecastHTML + `</div`;
   forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "6dt04340acdo33333a0be9731ef54b37";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&unit=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -66,6 +74,8 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
+
+  getForecast(response.data.coordinates);
 }
 
 function search(city) {
@@ -110,4 +120,3 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("London");
-displayForecast();
