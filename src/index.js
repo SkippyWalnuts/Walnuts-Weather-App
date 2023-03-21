@@ -49,7 +49,7 @@ function displayForecast(response) {
 
             <div class="forecast-temperature" id="forecast-temperature">${Math.round(
               forecastDay.temperature.minimum
-            )}°C to ${Math.round(forecastDay.temperature.maximum)}°C</div>
+            )}°C ~ ${Math.round(forecastDay.temperature.maximum)}°C</div>
   </div>
 `;
     }
@@ -60,14 +60,12 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiKey = "6dt04340acdo33333a0be9731ef54b37";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&unit=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let cityElement = document.querySelector("#city");
   let temperatureElement = document.querySelector("#temperature");
   let descriptionElement = document.querySelector("#description");
@@ -102,7 +100,6 @@ function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
-  console.log(cityInputElement.value);
 }
 
 let form = document.querySelector("#search-form");

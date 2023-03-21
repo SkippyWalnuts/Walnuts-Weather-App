@@ -1,31 +1,26 @@
 h1 {
-  font-size: 100px;
+  font-size: 60px;
   font-weight: bolder;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h2 {
   display: inline;
-  font-size: 80px;
+  font-size: 40px;
 }
 
 h3 {
   display: inline;
-  font-size: 50px;
-}
-
-a {
-  text-decoration: none;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 40px;
-
+  font-size: 30px;
   text-transform: capitalize;
 }
 
 h5 {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 ul {
@@ -34,7 +29,7 @@ ul {
 
 li {
   list-style: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 footer {
@@ -47,9 +42,9 @@ footer {
   display: block;
   font-family: "Quicksand", sans-serif;
   margin: 20px auto;
-  min-width: 950px;
-  max-width: 950px;
-  padding: 20px 20px 20px 20px;
+
+  max-width: 750px;
+  padding: 20px;
 }
 
 .search-form {
@@ -57,17 +52,12 @@ footer {
   margin: 0 20px auto 20px;
 }
 
-.weather-temperature .active {
-  color: #3f3d56;
-  cursor: default;
-}
-
 .date {
   color: #ff63d7;
 }
 
 .forecast {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 450;
   margin-top: 20px;
   text-align: center;
