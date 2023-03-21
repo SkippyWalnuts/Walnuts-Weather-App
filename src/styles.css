@@ -67,7 +67,8 @@ footer {
 }
 
 .forecast {
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: 450;
   margin-top: 20px;
   text-align: center;
 }

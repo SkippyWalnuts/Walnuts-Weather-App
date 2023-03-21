@@ -20,62 +20,62 @@
 
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <form class="search-form" id="search-form">
+        <div class="weather-app">
+            <div class="card">
+                <div class="card-body">
+                    <form class="search-form" id="search-form">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <input type="search" placeholder="Where to next?" autofocus="on" autocomplete="off"
+                                    id="city-input" class="form-control shadow-sm" />
+                            </div>
+                            <div class="col-md-3">
+                                <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                            </div>
+                        </div>
+                    </form>
+
+                    <h1 id="city">
+                    </h1>
+
                     <div class="row">
-                        <div class="col-md-9">
-                            <input type="search" placeholder="Where to next?" autofocus="on" autocomplete="off"
-                                id="city-input" class="form-control shadow-sm" />
+                        <div class="col-md-5">
+                            <h2 id="temperature"></h2>
+                            <h3 class="weather-temperature"><a href="#" id="celsius-link" class="active">°C</a> | <a
+                                    href="#" id="fahrenheit-link">°F</a></h3>
+
+                            <h4 id="description"></h4>
+                            <ul>
+                                <li> Humidity: <span id="humidity">94</span>%</li>
+                                <li> Wind: <span id="wind">15</span> km/h</li>
+                            </ul>
+                            <h5>Last updated: <span id="date" class="date"></span></h5>
                         </div>
-                        <div class="col-md-3">
-                            <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                        <div class="col-md-2 weather-icon">
+                            <img src="" id="icon" height=150 width=150>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="src/images/undraw_playing_fetch.svg" class="app-image" height=250 width=350
+                                alt="season spring">
                         </div>
                     </div>
-                </form>
 
-                <h1 id="city">
-                </h1>
+                    <div class="forecast" id="forecast">
 
-                <div class="row">
-                    <div class="col-md-5">
-                        <h2 id="temperature"></h2>
-                        <h3 class="weather-temperature"><a href="#" id="celsius-link" class="active">°C</a> | <a
-                                href="#" id="fahrenheit-link">°F</a></h3>
-
-                        <h4 id="description"></h4>
-                        <ul>
-                            <li> Humidity: <span id="humidity">94</span>%</li>
-                            <li> Wind: <span id="wind">15</span> km/h</li>
-                        </ul>
-                        <h5>Last updated: <span id="date" class="date"></span></h5>
                     </div>
-                    <div class="col-md-2 weather-icon">
-                        <img src="" id="icon">
-                    </div>
-                    <div class="col-md-5">
-                        <img src="src/images/undraw_playing_fetch.svg" class="app-image" height=250 width=350
-                            alt="season spring">
-                    </div>
-                </div>
-
-                <div class="forecast" id="forecast">
 
                 </div>
-
             </div>
+
+            <footer>
+                <p>🎨<a href="https://github.com/SkippyWalnuts/Walnuts-Weather-App" class="gitHub.source.link"
+                        id="gitHub-source-link">Source-Code</a> by Rebecca Early👾
+                </p>
+            </footer>
+
         </div>
-
-        <footer>
-            <p>🎨<a href="https://github.com/SkippyWalnuts/Walnuts-Weather-App" class="gitHub.source.link"
-                    id="gitHub-source-link">Source-Code</a> by Rebecca Early👾
-            </p>
-        </footer>
-        <script src="src/index.js">
-
-
-        </script>
-
+    </div>
+    <script src="src/index.js"></script>
 </body>
 
 </html>
