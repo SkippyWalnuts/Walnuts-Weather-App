@@ -1,5 +1,9 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
+  let month = date.getMonth();
+  if (month == 2) {
+    console.log(`src/images/undraw_spring.svg`);
+  }
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
