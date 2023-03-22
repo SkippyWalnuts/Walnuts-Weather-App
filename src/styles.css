@@ -37,13 +37,16 @@ footer {
   text-align: center;
 }
 
+.weather-app {
+  max-width: 850px;
+  min-width: 850px;
+  margin: 60px auto;
+}
+
 .card {
   color: #3f3d56;
-  display: block;
   font-family: "Quicksand", sans-serif;
-  margin: 20px auto;
-
-  max-width: 750px;
+  margin-bottom: 20px;
   padding: 20px;
 }
 
