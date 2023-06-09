@@ -69,7 +69,7 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 726px) {
+@media (max-width: 400px) {
   .weather-app {
     min-width: 700px;
     
