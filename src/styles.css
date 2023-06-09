@@ -1,3 +1,7 @@
+body {
+  min-width: 700px;
+}
+
 h1 {
   font-size: 60px;
   font-weight: bolder;
@@ -39,7 +43,7 @@ footer {
 
 .weather-app {
   max-width: 700px;
-  min-width: 700px;
+  
   margin: 60px auto;
 }
 
