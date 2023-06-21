@@ -26,12 +26,12 @@
                 <div class="card-body">
                     <form class="search-form" id="search-form">
                         <div class="row">
-                            <div class="col-md-9">
+                            <div class="col-sm-9">
                                 <input type="search" placeholder="Where to next?" autofocus="on" autocomplete="off"
                                     id="city-input" class="form-control shadow-sm" />
                             </div>
-                            <div class="col-md-3">
-                                <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+                            <div class="col-sm-3">
+                                <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm search-button" />
                             </div>
                         </div>
                     </form>
@@ -40,7 +40,7 @@
                     </h1>
 
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-5">
                             <h2 id="temperature"></h2>
                             <h3 class="weather-temperature">°C</h3>
 
@@ -51,10 +51,11 @@
                             </ul>
                             <h5>Last updated: <span id="date" class="date"></span></h5>
                         </div>
-                        <div class="col-md-2 weather-icon">
-                            <img src="" id="icon" height=115 width=115>
+
+                        <div class="col-2 weather-icon">
+                            <img src="" id="icon" class="season-image img-fluid">
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-5">
                             <img src="src/images/undraw_spring.svg" 
                             class="season-image img-fluid"
                             id="season-image"

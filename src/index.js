@@ -45,7 +45,7 @@ function displayForecast(response) {
        
 <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
           forecastDay.condition.icon
-        }.png" class="forecast-icon">
+        }.png" class="forecast-icon img-fluid">
 
             <div class="forecast-temperature" id="forecast-temperature">${Math.round(
               forecastDay.temperature.minimum
